@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Canvas </title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <header id="header">Drawing Board</header>
+        <section id="content">
+
+            <ul id="tool">
+                <li id="border-red">
+                    <h3>Task</h3>
+                    <hr>
+                    <ul id="image">
+                        <li>
+                            <button id="saveimg">Save</button>
+                        </li>
+                        <li>
+                            <button id="clearimg">Clear</button>
+                        </li>
+                    </ul>
+                </li>
+                <li id="border-red">
+                    <h3>Tools</h3>
+                    <hr>
+                    <ul id="means">
+                        <li id="means_brush" onclick="drawBrush(0)">
+                            <img src="./images/pencil1.jpeg" alt>
+                        </li>
+                        <li id="means_eraser" onclick="drawEraser(1)">
+                            <img src="./images/Eraser.png" alt>
+                        </li>
+                        <li id="means_paint" onclick="drawPaint(2)">
+                            <img src="./images/Paint.png" alt>
+                        </li>
+                        <li id="means_straw" onclick="drawStrw(3)">
+                            <img src="./images/redo.png" alt="Drawing Icon">
+                        </li>
+
+                        <li id="means_text" onclick="drawText(4)">
+                            <img src="./images/text.png" alt>
+                        </li>
+                        <li id="means_magnifier" onclick="drawMagnigier(5)">
+                            <img src="./images/Magnifier.png" alt>
+                        </li>
+                    </ul>
+                </li>
+                <li id="border-red">
+                    <h3>Shape</h3>
+                    <hr>
+                    <ul id="means">
+                        <li id="means_line" onclick="drawLine(6)">
+                            <img src="./images/line.png" alt>
+                        </li>
+                        <li id="means_arc" onclick="drawArc(7)">
+                            <img src="./images/arc.png" alt>
+                        </li>
+                        <li id="means_rect" onclick="drawRect(8)">
+                            <img src="./images/rect.png" alt>
+                        </li>
+                        <li id="means_poly" onclick="drawPoly(9)">
+                            <img src="./images/poly.png" alt>
+                        </li>
+                        <li id="means_arcfill" onclick="drawArcfill(10)">
+                            <img src="./images/arcfill.png" alt>
+                        </li>
+                        <li id="means_reactfill" onclick="drawReactfill(11)">
+                            <img src="./images/rectfill.png" alt>
+                        </li>
+                    </ul>
+                </li>
+                <li id="border-red">
+                    <h3>Lines</h3>
+                    <hr>
+                    <ul id="size">
+                        <li id="width_1" onclick="setLineWith(0)">
+                            <img src="./images/line1px.png">
+                        </li>
+                        <li id="width_3" onclick="setLineWith(1)">
+                            <img src="./images/line3px.png">
+                        </li>
+                        <li id="width_5" onclick="setLineWith(2)">
+                            <img src="./images/line5px.png">
+                        </li>
+                        <li id="width_8" onclick="setLineWith(3)">
+                            <img src="./images/line8px.png">
+                        </li>
+                    </ul>
+                </li>
+                <li class="last-border-right">
+                    <h3>Color</h3>
+                    <hr>
+                    <ul id="color">
+                        <li id="red" onclick="setColor(this,0)"></li>
+                        <li id="green" onclick="setColor(this,1)"></li>
+                        <li id="blue" onclick="setColor(this,2)"></li>
+                        <li id="yellow" onclick="setColor(this,3)"></li>
+                        <li id="white" onclick="setColor(this,4)"></li>
+                        <li id="black" onclick="setColor(this,5)"></li>
+                        <li id="pink" onclick="setColor(this,6)"></li>
+                        <li id="purple" onclick="setColor(this,7)"></li>
+                        <li id="cyan" onclick="setColor(this,8)"></li>
+                        <li id="orange" onclick="setColor(this,9)"></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <canvas id="canvas" width="880" height="400">Your browser does not
+                support the canvas tag. Please upgrade your browser.</canvas>
+            <script src="./main.js"></script>
+        </section>
+        <footer id="footer">
+            <small>Azeem Aslam @ Copyright</small>
+        </footer>
+    </body>
+
+</html>

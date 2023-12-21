@@ -1,0 +1,194 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Microsoft YaHei';
+    background: lightslategrey;
+}
+
+
+#header {
+    width: 900px;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    text-decoration: underline;
+    font-style: italic;
+    color:lightyellow;
+}
+
+
+#content {
+    width: 880px;
+    height: 550px;
+    background: lightgray;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#canvas {
+    background: white;
+}
+
+#tool {
+    height: 150px;
+    text-align: center;
+}
+
+#tool li {
+    width: 175px;
+    height: 140px;
+    float: left;
+    background: lightsteelblue ;
+}
+
+#border-red {
+    border-right: 1px solid white;
+}
+
+#image li {
+    padding: 15px 0 0 25px;
+    width: 100px;
+    height: 30px;
+    /* list-style: square inside; */
+    border: 0;
+}
+
+#image li button {
+    background:black;
+    border: 1px solid #000;
+    font-size: 16px;
+    color: white;
+}
+
+#image li button:hover {
+    border: 1px solid red   ;
+    cursor: pointer;
+   
+}
+
+#means {
+    padding: 10px;
+    height: 80px;
+}
+
+#means li {
+    height: 20px;
+    width: 48.6px;
+    margin-top: 14px;
+    border: 1px solid gray;
+    border-right: none;
+}
+
+#means li:hover {
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+#means li:nth-child(3n + 0) {
+    border: 1px solid gray;
+}
+
+#means li:nth-child(3n + 0):hover {
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+#means img {
+    width: 20px;
+    height: 20px;
+}
+
+#size {
+    margin: 14px 0 0 0;
+}
+#size li {
+    margin: 7px auto 0;
+    height: 13px;
+    width: 100px;
+    border: 1px solid #ccc;
+    float: none;
+}
+#size li img{
+    margin: 3px 0 0 0;
+    display: block;
+}
+
+#size li:hover {
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+#color {
+    padding: 24px 0 0 10px;
+}
+
+#color li {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #000;
+    margin: 3px;
+}
+
+#color li:hover {
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+#color #red {
+    background: red
+}
+
+#color #green {
+    background: green
+}
+
+#color #blue {
+    background: blue
+}
+
+#color #yellow {
+    background: yellow
+}
+
+#color #white {
+    background: white
+}
+
+#color #black {
+    background: black
+}
+
+#color #pink {
+    background: pink
+}
+
+#color #purple {
+    background: purple
+}
+
+#color #cyan {
+    background: cyan
+}
+
+#color #orange {
+    background: orange
+}
+
+
+#footer {
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
