@@ -371,3 +371,34 @@ Saveimg.addEventListener("click", function () {
 }, false)
 
 
+// ... existing code ...
+
+var socket = io();
+
+// ... existing code ...
+
+canvas.onmousemove = function (e) {
+  e = window.e || e;
+  var endX = e.pageX - this.offsetLeft;
+  var endY = e.pageY - this.offsetTop;
+  if (flag) {
+    cxt.lineTo(endX, endY);
+    cxt.stroke();
+
+    // Emit drawing data to the server
+    socket.emit('draw', { startX, startY, endX, endY });
+  }
+};
+
+// ... existing code ...
+
+// Listen for drawing events from the server
+socket.on('draw', (data) => {
+  cxt.beginPath();
+  cxt.moveTo(data.startX, data.startY);
+  cxt.lineTo(data.endX, data.endY);
+  cxt.stroke();
+  cxt.closePath();
+});
+
+// ... existing code ...
